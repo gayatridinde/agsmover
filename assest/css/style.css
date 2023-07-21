@@ -1,0 +1,463 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing:border-box;
+}
+a {
+    text-decoration:none;
+}
+.text-justify{
+ text-align:justify;
+}
+header .tophead{
+    height: 28px;
+    background-color:#34313a;
+}
+header .tophead .leftgroup ul li a{
+    color:#fff;
+    font-size:13px;
+    margin: 0px 20px;
+}  
+header .tophead .leftgroup ul li a.active{
+    width:auto;
+    height:auto;  
+    color:red;
+    font-weight:700;
+    line-height:28px;
+    text-align:center;
+    position:relative;
+    background-color:#fff;
+    display:inline-block;
+}   
+ header .tophead .leftgroup ul li a.active:hover{
+     text-decoration: underline;
+}  
+header .tophead .leftgroup ul li a.active::before{
+    content: "";
+    top:0px;
+    width:0;
+    height:0;
+    right:100%;
+    position:absolute;
+    border-right: 15px solid #fff;
+    border-bottom: 0px solid #fff;
+    border-top:28px solid transparent;
+}
+ header .tophead .rightgroup ul li{
+     margin:0px 15px;
+}
+header .tophead .rightgroup ul li a{
+color:#fff;
+font-size:13px;
+} 
+header .tophead .rightgroup ul li select:hover{
+border:none;
+color:#fff;
+font-size:13px;
+background-color:black;
+border:none;
+}
+/*tophead section end*/
+/*navbar section start*/
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: var(--bs-navbar-toggler-icon-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+nav a{
+    font-size:14px;
+    font-weight:600;
+    background-position: center;
+}
+.dropdown .dropdown-menu a {
+    color: #fff;
+  }
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0px;
+    background: #3a3939;
+  }
+  .dropdown-content li:hover {
+    background-color: black;
+    color: white;
+  }
+  /*--Mega menu Section Start---*/
+  /*.navbar .navbar-collapse .nav-item a .mega-menu
+  {
+    display: block;
+  }*/
+  .mega-menu
+  {
+    display:none;
+    margin-top: 30px;
+  }
+  .mega-menu .dropdown-close
+  {
+    float: right;
+    position: fixed;
+    right: 20px;
+    top: 97px;
+  }
+  .mega-menu .dropdown-close .cross 
+  {
+    background: none;
+    border: none;
+    font-size: 26px;
+    background: #fff;
+    width: 100%;
+    height: 25px;
+  }
+  .mega-menu .dropdown-close .cross i
+  {
+    font-size: 26px;
+    background: #fff;
+  }
+  .nav-item:hover .mega-menu
+  {
+    background: #34313a;
+    display: block;
+    margin-top: 30px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 700px;
+    z-index:9;
+  }
+  .mega-menu .choose-us h5
+  {
+    font-size: 15px;
+    border-width: 300px;
+  }
+  .mega-menu .choose-us
+  {
+    color:#fff;
+    position: relative;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  #mega-menu2 .choose-us
+  {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .mega-menu .choose-us a
+  {
+    font-size: 14px;
+    color: #ccc;
+    line-height: 1.6;
+  }
+  .mega-menu .choose-us .abc:hover
+  {
+    transform: scale(1.1);
+    transition: 0.3s all;
+    font-weight: bold;
+    touch-action: manipulation;
+  }
+  .nav-item:hover #mega-menu2
+  {
+    background: #34313a;
+    display: block;
+    margin-top: 39px;
+    position: absolute;
+    left: -3px;
+    right: 2000;
+    width: 100%;
+    height: 550px;
+    z-index:9;
+    padding: 30px 15px;
+  }
+  /*--Mega menu Section End----*/
+/*slider section start*/
+.carousel-inner .carousel-item {
+    height:500px;
+}
+    @keyframes zoomin {
+        from{ transform:scale(1);
+        }
+        to
+        {
+            transform:scale(1.3);   
+        }
+    }
+    .carousel-inner .carousel-item  img{
+    animation: zoomin 20s infinite;
+    }
+    .carousel-dark .carousel-indicators [data-bs-target]
+        {  
+     width:20px;
+      height:20px;
+     border-radius: 50%;
+}
+    /* slider section end */
+  /* Internatinal removal section start */
+ .interbox{
+    z-index:9;
+min-height:200px;
+margin-top:-50px;
+background: #fff;
+ }
+ .interbox p{
+    font-size: 18px;
+    color:rgb(45, 44, 44);
+ }
+ .interbox a{
+    color:#b00000;
+ }
+ .interbox h2{
+    color:#b00000;
+    font-weight: 600;
+    font-size: 24px;
+ }
+/*Internatinal removal section end*/
+/*Indivisual corporation section start*/
+.imgbox{
+    overflow:hidden;
+}
+.imgbox img:hover{
+    transform:scale(1.2);
+    transition:10s;
+}
+.see:hover{
+    background-color:#b00000;
+    color: #fff; 
+}
+.see {
+    width: 200px;
+    border: 2px solid maroon;
+    height: 40px;
+}
+button, input, optgroup, select, textarea {
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.us {
+    width: 200px;
+    height: 40px;
+    border: 2px solid maroon;
+    background-color: #b00000;
+    color: #fff;
+    display: inline;
+}
+.uss {
+    width: 150px;
+    height: 40px;
+    border: 2px solid maroon;
+    background-color: #b00000;
+    color: #ffff;
+    display: inline;
+}
+.ms-3 {
+    margin-left: 1rem!important;
+    }
+/*Indivisual corporation section end*/
+ /*domestic section start*/
+ .domestic{
+    background: #34313a;
+ }
+.domestic img:hover{
+transform:scale(1.1);
+}
+  /*domestic section end*/
+  /* <!-- world section start --> */
+.world .btn {
+  border: 2px solid #be0303;
+  color: #fff;
+  border-radius: 0%;
+  padding: 8px 20px;
+  background-color: #920606;
+  font-size: 14px;
+  font-weight: bold;
+}
+.world h1 {
+  font-size: 50px;
+}
+.world img {
+  width: 100%;
+}
+/* <!-- world section start --> */
+  /*------------------------------------Contact / General Enquiries Section Start---------------------------------------------*/
+.detail .detailbox
+{
+  border: 1px solid #e6e6e6;
+  background-color: #f2f2f2;
+  border-radius: 2.5px;
+}
+.detail #receive-email
+{
+  margin: 5px 10px 0px 0px;
+}
+.detail .sendbtn
+{
+  background: #b00000;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 7px 45px;
+  border-radius: 3px;
+  text-transform: uppercase;
+  font-size: 14px;
+  margin: 10px 0 50px 0;
+}
+
+/*------------------------------------Contact / General Enquiries Section End---------------------------------------------*/
+/* <!-- network section start  --> */
+.network h2{
+color:#b00000;
+}
+.network img {
+  width: 100%;
+}
+.network .btn {
+  border: 2px solid #be0303;
+  color: #920606;
+  border-radius: 0%;
+  padding: 8px 20px;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 8px;
+}
+.network .btn:hover {
+  background-color: #af0202;
+  color: white;
+}
+.network .btn.active {
+  background-color: #af0202;
+  color: white;
+}
+.network .btn.active:hover {
+  background-color: #af0202;
+}
+/* <!-- network section end  --> */
+
+
+
+
+  /* footer section start*/ 
+  .quote-btn
+{
+  background: #b00000;
+  border-radius: 7px;
+  height: 30px;
+  width: 150px;
+  text-align: center;
+  padding-top: 3px;
+}
+footer{
+    background-color: #333;
+}
+  footer ul
+{
+  list-style-type: none;
+}
+footer a
+{
+  color: #878191;
+}
+footer a:hover
+{
+  color: #c9c6ce;
+  text-decoration: underline;
+}
+/* footer section end*/
+/*--Footer2 Section Start---*/
+.footer2
+{
+  background-color: #29282d;
+  color: #878191;
+  padding-top: 7px;
+}
+.footer2 a
+{
+  color: #878191;
+}
+/*--Footer2 Section End---*/
+/*------------------------------------Our Network / Branches Section Start---------------------------------------------*/
+/*--Banner Section Start---*/
+.banner img
+{
+  width: 100%;
+  height: 300px;
+  position: relative;
+}
+.overlay
+{
+  width: 90%;
+  height: 7%;
+  position: absolute;
+  top: 200;
+  left: 0;
+  z-index:1;
+  margin-top: -40px;
+  background: white;
+  margin-left: 60px;
+  margin-right: 60px;
+}
+.banner ul
+{
+	
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  float: right;
+  padding: 0 70px;
+  top: 360px;
+  font-size: 12px;
+  color:#b00000;
+}
+.banner ul li a
+{
+  color: #b00000;;
+}
+.banner ul span
+{
+  color: #666;
+  text-shadow: none;
+  font-size: 8px;
+  margin-top: 3px;
+}
+/*--Banner Section End---*/
+/*--Benefit Section Start---*/
+.benefit h1
+{
+  color:#b00000;
+}
+/*--Benefit Section End---*/
+/*--Network Section Start---*/
+#network h5
+{
+  color:#b00000;
+}
+.countrylist ul li a{
+  color:#292b2c;
+}
+.countrylist ul li a:hover{
+  color:#b00000;
+}
+/*--Network Section end---*/
+  /* media quary section start */
+@media only screen and(max-width:1023px)
+{
+    header .tophead{
+        display:none;
+}
+navbar-expand-lg .navbar-nav .nav-link{
+    font-size:13px !important;
+}
+@media only screen and (max-width:768px)
+{
+    .carousel-inner .carousel-item .carousel-caption{
+        bottom: 9rem !important;
+    }
+    .carousel-indicator{
+        bottom: 8.5rem !important;
+    }
+}
+}
+    /* media quary section end */
